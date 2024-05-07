@@ -5,6 +5,22 @@
   transform: translate(-50%, -50%);
 }
 
+.cctv-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container {
+  width: 80%; /* Atur lebar container */
+  margin: 0 auto; /* Atur margin atas dan bawah menjadi 0 dan auto untuk menjaga container tetap berada di tengah */
+  padding: 20px; /* Atur padding untuk memberikan ruang di dalam container */
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar total container */
+}
+
+/* Butoon */
 a {
   display: block;
   width: 200px;
@@ -43,10 +59,4 @@ a:hover {
 
 a:hover:after {
   width: 100%;
-}
-
-.cctv-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
 }
